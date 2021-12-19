@@ -43,6 +43,20 @@ vector<Scanner> openFile(const string& path){
     return vec;
 }
 
+long getMaxDistance(vector<Scanner>& list){
+    long max = 0;
+
+    for (int i = 0; i < list.size(); ++i) {
+        for (int j = i+1; j < list.size(); ++j) {
+            long d = list[i].getPos().distance(list[j].getPos());
+            if(d > max)
+                max = d;
+        }
+    }
+    return max;
+}
+
+
 vector<Scanner> getPos(vector<Scanner> list){
     vector<Scanner> done;
     done.emplace_back(list[0]);
@@ -96,8 +110,8 @@ int main(int argc, char** argv){
     auto done = getPos(list);
     auto points = getPoints(done);
 
-    for(auto& p : points)
-        cout << p << endl;
     cout << points.size() << endl;
+
+    cout << getMaxDistance(done) << endl;
 
 }

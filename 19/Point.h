@@ -23,6 +23,8 @@ public:
     bool operator==(const Point& other) const;
     Point& operator=(const Point& other) = default;
 
+    long distance(const Point& other) const;
+
     int x, y, z;
 
     friend std::ostream& operator<<(std::ostream& s, const Point& p);

@@ -4,6 +4,7 @@
 
 #include "Point.h"
 #include <memory>
+#include <cmath>
 
 Point::Point()
     :x(0), y(0), z(0){}
@@ -36,6 +37,11 @@ void Point::_rotate(int n, int &x, int &y) {
     }
 
 }
+
+long Point::distance(const Point& other) const{
+    return abs(x-other.x)+abs(y-other.y)+abs(z-other.z);
+}
+
 
 Point Point::operator+(const Point& other) const{
     return {x+other.x, y+other.y, z+other.z};
