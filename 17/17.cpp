@@ -12,6 +12,7 @@
 #include <limits>
 #include <queue>
 
+
 using namespace std;
 
 struct Point{
@@ -25,6 +26,7 @@ struct Point{
         return *this;
     }
 };
+
 struct Rect{
     Point p1, p2;
 

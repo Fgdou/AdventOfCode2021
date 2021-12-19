@@ -9,6 +9,7 @@
 #include <limits>
 #include <queue>
 
+
 using namespace std;
 
 typedef vector<vector<bool>> Bool;
@@ -22,6 +23,7 @@ struct Point{
         return (x<other.x) || (x == other.x && y < other.y);
     }
 };
+
 
 const vector<Point> moves = {
         {1, 0}, {0, 1}, {-1, 0},{0, -1}
