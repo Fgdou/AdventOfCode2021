@@ -57,5 +57,9 @@ add_executable(17 17/17.cpp)
 project(18)
 add_executable(18 18/18.cpp 18/Number.cpp 18/Number.h)
 
+
 project(19)
 add_executable(19 19/19.cpp 19/Point.cpp 19/Point.h 19/Scanner.cpp 19/Scanner.h)
+
+project(20)
+add_executable(20 20/20.cpp)
