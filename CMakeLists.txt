@@ -69,3 +69,12 @@ add_executable(21 21/21.cpp)
 
 project(22)
 add_executable(22 22/22.cpp)
+
+project(23)
+add_executable(23 23/23.cpp 23/Board.cpp 23/Board.h 23/Point.cpp 23/Point.h)
+
+project(24)
+add_executable(24 24/24.cpp 24/Operation.cpp 24/Operation.h 24/ALU.cpp 24/ALU.h)
+
+project(25)
+add_executable(25 25/25.cpp)
